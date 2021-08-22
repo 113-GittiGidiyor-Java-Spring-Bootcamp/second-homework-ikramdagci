@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long courseId;
+    private Long id;
     @Column(name = "name")
     private String name;
     @Column(name = "course_code")
@@ -67,18 +67,18 @@ public class Course {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Course course = (Course) o;
-        return Objects.equals(courseId, course.courseId) && Objects.equals(courseCode, course.courseCode);
+        return Objects.equals(id, course.id) && Objects.equals(courseCode, course.courseCode);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(courseId, courseCode);
+        return Objects.hash(id, courseCode);
     }
 
     @Override
     public String toString() {
         return "Course{" +
-                "courseId=" + courseId +
+                "courseId=" + id +
                 ", name='" + name + '\'' +
                 ", courseCode='" + courseCode + '\'' +
                 ", creditScore=" + creditScore +

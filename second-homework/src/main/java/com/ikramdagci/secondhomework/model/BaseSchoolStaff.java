@@ -12,8 +12,8 @@ public abstract class BaseSchoolStaff {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "staff_id")
-    private Long staffId;
+    @Column(name = "id")
+    private Long id;
     @Column(name = "full_name")
     private String fullName;
     @Embedded
@@ -26,12 +26,8 @@ public abstract class BaseSchoolStaff {
 
     public BaseSchoolStaff() {}
 
-    public Long getStuffId() {
-        return staffId;
-    }
-
-    public void setStuffId(Long stuffId) {
-        this.staffId = stuffId;
+    public Long getId() {
+        return id;
     }
 
     public String getFullName() {
@@ -55,17 +51,17 @@ public abstract class BaseSchoolStaff {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         BaseSchoolStaff that = (BaseSchoolStaff) o;
-        return Objects.equals(staffId, that.staffId) && Objects.equals(fullName, that.fullName) && Objects.equals(address, that.address);
+        return Objects.equals(id, that.id) && Objects.equals(fullName, that.fullName) && Objects.equals(address, that.address);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(staffId, fullName, address);
+        return Objects.hash(id, fullName, address);
     }
 
     @Override
     public String toString() {
-        return "staffId=" + staffId +
+        return "staffId=" + id +
                 ", fullName='" + fullName + '\'' +
                 ", address=" + address;
     }

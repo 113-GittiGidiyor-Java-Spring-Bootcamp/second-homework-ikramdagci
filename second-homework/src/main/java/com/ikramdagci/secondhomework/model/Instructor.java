@@ -1,5 +1,8 @@
 package com.ikramdagci.secondhomework.model;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
@@ -8,6 +11,14 @@ import java.util.Set;
 @Entity
 @Table(name = "t_instructor")
 @Inheritance(strategy = InheritanceType.JOINED)
+@JsonTypeInfo(
+        use = JsonTypeInfo.Id.NAME,
+        include = JsonTypeInfo.As.PROPERTY,
+        property = "type")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = PermanentInstructor.class, name = "PermanentInstructor"),
+        @JsonSubTypes.Type(value = VisitingResearcher.class, name = "VisitingResearcher")
+})
 public abstract class Instructor extends BaseSchoolStaff {
 
     @Column(name = "phone_number")

@@ -4,11 +4,12 @@ import java.util.List;
 
 public interface CrudRepository<T>{
 
+
     List<T> findAll();
     T findById(Long id);
-    void saveToDatabase(T object);
+    T save(T object);
+    void deleteById(Long id);
     void deleteFromDatabase(T object);
-    void deleteFromDatabase(Long id);
-    void updateOnDatabase(T object, Long id);
+    T update(T object);
 
 }

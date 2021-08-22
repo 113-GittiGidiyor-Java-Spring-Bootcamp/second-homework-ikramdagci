@@ -59,7 +59,7 @@ public class StudentDaoJpaImpl implements StudentDao {
 
     @Override
     @Transactional
-    public void deleteFromDatabase(Student student) {
+    public void delete(Student student) {
         entityManager.remove(student);
     }
 

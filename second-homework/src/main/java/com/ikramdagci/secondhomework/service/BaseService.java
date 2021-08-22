@@ -9,8 +9,8 @@ public interface BaseService<T> {
 
     List<T> findAll();
     T findById(Long id);
-    T save(T object);
+    T save(T t);
     void deleteById(Long id);
-    T update(T object);
+    T update(T t);
 
 }

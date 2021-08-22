@@ -4,6 +4,7 @@ import com.ikramdagci.secondhomework.model.Address;
 import com.ikramdagci.secondhomework.model.Course;
 import com.ikramdagci.secondhomework.model.Instructor;
 import com.ikramdagci.secondhomework.model.Student;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Repository
 public class InstructorDaoJpaImpl implements InstructorDao{
 
     private final EntityManager entityManager;
@@ -45,7 +47,7 @@ public class InstructorDaoJpaImpl implements InstructorDao{
 
     @Override
     @Transactional
-    public void deleteFromDatabase(Instructor instructor) {
+    public void delete(Instructor instructor) {
         entityManager.remove(instructor);
     }
 

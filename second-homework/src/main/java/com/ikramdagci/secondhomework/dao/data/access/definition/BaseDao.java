@@ -1,4 +1,4 @@
-package com.ikramdagci.secondhomework.dao;
+package com.ikramdagci.secondhomework.dao.data.access.definition;
 
 import org.springframework.stereotype.Repository;
 

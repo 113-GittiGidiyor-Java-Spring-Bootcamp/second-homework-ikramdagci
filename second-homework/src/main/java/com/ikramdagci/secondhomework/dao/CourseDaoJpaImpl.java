@@ -1,8 +1,7 @@
 package com.ikramdagci.secondhomework.dao;
 
+import com.ikramdagci.secondhomework.dao.data.access.definition.CourseDao;
 import com.ikramdagci.secondhomework.model.Course;
-import com.ikramdagci.secondhomework.model.Instructor;
-import com.ikramdagci.secondhomework.model.Student;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

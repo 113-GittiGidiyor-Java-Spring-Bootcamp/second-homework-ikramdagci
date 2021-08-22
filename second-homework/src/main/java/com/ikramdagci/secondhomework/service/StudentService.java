@@ -1,9 +1,7 @@
 package com.ikramdagci.secondhomework.service;
 
-import com.ikramdagci.secondhomework.dao.StudentDao;
-import com.ikramdagci.secondhomework.exception.StaffNotFoundException;
+import com.ikramdagci.secondhomework.dao.data.access.definition.StudentDao;
 import com.ikramdagci.secondhomework.model.Address;
-import com.ikramdagci.secondhomework.model.Gender;
 import com.ikramdagci.secondhomework.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

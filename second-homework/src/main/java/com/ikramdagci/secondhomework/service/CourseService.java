@@ -1,6 +1,6 @@
 package com.ikramdagci.secondhomework.service;
 
-import com.ikramdagci.secondhomework.dao.CourseDao;
+import com.ikramdagci.secondhomework.dao.data.access.definition.CourseDao;
 import com.ikramdagci.secondhomework.model.Course;
 import org.springframework.stereotype.Service;
 

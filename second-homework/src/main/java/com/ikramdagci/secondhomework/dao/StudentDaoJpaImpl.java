@@ -1,11 +1,11 @@
 package com.ikramdagci.secondhomework.dao;
 
+import com.ikramdagci.secondhomework.dao.data.access.definition.StudentDao;
 import com.ikramdagci.secondhomework.exception.StaffNotFoundException;
 import com.ikramdagci.secondhomework.model.Address;
 import com.ikramdagci.secondhomework.model.Course;
 import com.ikramdagci.secondhomework.model.Gender;
 import com.ikramdagci.secondhomework.model.Student;
-import com.ikramdagci.secondhomework.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

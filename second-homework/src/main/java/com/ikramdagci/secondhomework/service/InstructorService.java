@@ -1,7 +1,7 @@
 package com.ikramdagci.secondhomework.service;
 
 
-import com.ikramdagci.secondhomework.dao.InstructorDao;
+import com.ikramdagci.secondhomework.dao.data.access.definition.InstructorDao;
 import com.ikramdagci.secondhomework.model.Instructor;
 import org.springframework.stereotype.Service;
 

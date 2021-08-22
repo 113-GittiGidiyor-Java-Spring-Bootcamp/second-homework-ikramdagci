@@ -1,4 +1,4 @@
-package com.ikramdagci.secondhomework.dao;
+package com.ikramdagci.secondhomework.dao.data.access.definition;
 
 import com.ikramdagci.secondhomework.model.Student;
 import com.ikramdagci.secondhomework.repository.StudentRepository;
